@@ -62,7 +62,7 @@ function element_validate_range($element) {
         form_error($element, t('Number must be less than 50 or greater than -50.'));
     }
 }
-function element_validate_even() {
+function element_validate_even($element) {
     if ($element['#value'] % 2 != 0) {
         form_error($element, t('Number must be even.'));
     }
